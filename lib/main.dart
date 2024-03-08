@@ -14,7 +14,7 @@ void main() async {
         projectId: "social-login-24980"
     )
   );
-  
+
   runApp( const MyApp());
 
 }
