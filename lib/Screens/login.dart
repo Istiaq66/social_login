@@ -17,6 +17,7 @@ class Login extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final size = MediaQuery.of(context).size;
     return Scaffold(
       backgroundColor: Colors.grey[300],
       body: SafeArea(
@@ -29,10 +30,10 @@ class Login extends StatelessWidget {
                   height: 20,
                 ),
                 //logo
-                const Image(
-                  image: AssetImage('images/logo.png'),
-                  height: 150,
-                  width: 150,
+                 Image(
+                  image: const AssetImage('images/logo.png'),
+                  height: size.height * 0.1,
+                  width: size.height * 0.1,
                 ),
 
                 //Appname
