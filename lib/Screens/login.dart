@@ -37,7 +37,7 @@ class Login extends StatelessWidget {
 
                 //Appname
                 const Text(
-                  'Auction App',
+                  'Social Login App',
                   style: TextStyle(fontFamily: 'Pacifico', fontSize: 25),
                 ),
 
