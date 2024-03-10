@@ -1,5 +1,6 @@
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_facebook_auth/flutter_facebook_auth.dart';
 import 'Screens/auth_page.dart';
 
 void main() async {
@@ -14,7 +15,7 @@ void main() async {
         projectId: "social-login-24980"
     )
   );
-
+  
   runApp( const MyApp());
 
 }

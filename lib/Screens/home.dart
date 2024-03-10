@@ -1,9 +1,10 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:google_sign_in/google_sign_in.dart';
+import 'package:flutter_facebook_auth/flutter_facebook_auth.dart';
 
 class Home extends StatefulWidget {
-   Home({super.key});
+   const Home({super.key});
 
   @override
   State<Home> createState() => _HomeState();
@@ -17,6 +18,7 @@ class _HomeState extends State<Home> {
     final GoogleSignIn googleSignIn = GoogleSignIn();
     await googleSignIn.signOut();
     await FirebaseAuth.instance.signOut();
+    await FacebookAuth.instance.logOut();
   }
 
   @override

@@ -132,23 +132,39 @@ class Login extends StatelessWidget {
                 const SizedBox(
                   height: 20,
                 ),
-                GestureDetector(
-                  onTap:
-                      // anonymous function
-                      () => AuthService().signInWithGoogle(),
-                  child: Container(
-                    padding: const EdgeInsets.all(20),
-                    decoration: BoxDecoration(
-                      border: Border.all(color: Colors.white),
-                      borderRadius: BorderRadius.circular(16),
-                      color: Colors.grey[200],
-                    ),
-                    child: Image.asset(
-                      'images/google.png',
-                      height: 30,
-                    ),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      GestureDetector(
+                        onTap: ()=>  AuthService().signInWithGoogle(),
+                        child: Container(
+                          padding: const EdgeInsets.all(20),
+                          decoration: BoxDecoration(
+                            border: Border.all(color: Colors.white),
+                            borderRadius: BorderRadius.circular(16),
+                            color: Colors.grey[200],
+                          ),
+                          child: Image.asset( 'images/google.png',height: 30,),
+                        ),
+                      ),
+                      const SizedBox(width: 10,),
+
+                      GestureDetector(
+                        onTap: () async {
+                         await AuthService().signInWithFacebook();
+                        } ,
+                        child: Container(
+                          padding: const EdgeInsets.all(20),
+                          decoration: BoxDecoration(
+                            border: Border.all(color: Colors.white),
+                            borderRadius: BorderRadius.circular(16),
+                            color: Colors.grey[200],
+                          ),
+                          child: Image.asset('images/facebook.png', height: 30),
+                        ),
+                      ),
+                    ],
                   ),
-                ),
                 const SizedBox(
                   height: 20,
                 ),

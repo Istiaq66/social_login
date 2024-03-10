@@ -51,6 +51,7 @@ android {
         versionCode flutterVersionCode.toInteger()
         versionName flutterVersionName
         multiDexEnabled true
+        minSdkVersion 21
     }
 
     buildTypes {
@@ -66,4 +67,6 @@ flutter {
     source '../..'
 }
 
-dependencies {}
+dependencies {
+    implementation 'com.facebook.android:facebook-login:latest.release'
+}
