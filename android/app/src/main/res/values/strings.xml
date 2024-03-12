@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Auth Demo</string>
-    <string name="facebook_app_id">1461894534431764</string>
-    <string name="fb_login_protocol_scheme">fb1461894534431764</string>
-    <string name="facebook_client_token">09cbf1f684a790922a93d8ac707efc07</string>
+    <string name="app_name">Social Login Demo</string>
+    <string name="facebook_app_id">286036681036897</string>
+    <string name="fb_login_protocol_scheme">fb286036681036897</string>
+    <string name="facebook_client_token">84ccb697dad46a2edcd8e4d1faddf544</string>
 </resources>

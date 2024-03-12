@@ -56,7 +56,7 @@ class _HomeState extends State<Home> {
                   fontWeight: FontWeight.w200),
             ),
             Text(
-              'User email: ${user.email!}',
+              'User email: ${user.email}',
               style: const TextStyle(
                   fontFamily: 'SourceSans3',
                   fontSize: 20,
