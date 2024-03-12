@@ -55,7 +55,8 @@ class _HomeState extends State<Home> {
                   fontSize: 20,
                   fontWeight: FontWeight.w200),
             ),
-            user.email == null ? const SizedBox() : Text(
+            user.email == null ?
+            const SizedBox() : Text(
               'User email: ${user.email}',
               style: const TextStyle(
                   fontFamily: 'SourceSans3',
